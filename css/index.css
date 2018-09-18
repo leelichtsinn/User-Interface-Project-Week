@@ -192,6 +192,7 @@ img {
   font-size: 24px;
   font-weight: bold;
   color: #FFFF F;
+  margin: 0;
 }
 footer {
   display: flex;
@@ -289,6 +290,12 @@ footer .footer-copyright p {
   padding: 15px;
   margin-bottom: 35px;
 }
+.home .projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .home .projects h3 {
   font-size: 2.8rem;
   font-weight: bold;
@@ -296,7 +303,7 @@ footer .footer-copyright p {
 }
 .home .villas {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   width: 83%;
@@ -324,6 +331,9 @@ footer .footer-copyright p {
   font-size: 2.8rem;
   padding-top: 25px;
 }
+.home .villas .text-content {
+  width: 50%;
+}
 .home .outskirts {
   display: flex;
   flex-direction: column;
@@ -350,6 +360,9 @@ footer .footer-copyright p {
   font-size: 2.8rem;
   padding-top: 25px;
 }
+.home .outskirts .text-content {
+  width: 50%;
+}
 .home .the-blocks {
   display: flex;
   flex-direction: column;
@@ -361,8 +374,10 @@ footer .footer-copyright p {
   position: relative;
   margin-top: 25px;
   margin-bottom: 45px;
+}
+.home .the-blocks .the-blocks-header .the-blocks-title {
   position: absolute;
-  bottom: -11px;
+  bottom: -18px;
   right: 1px;
   width: 314px;
   height: 94px;
@@ -370,9 +385,12 @@ footer .footer-copyright p {
   background-color: #D8D8D8;
   text-align: center;
 }
-.home .the-blocks .the-blocks-header p {
+.home .the-blocks .the-blocks-header .the-blocks-title p {
   font-size: 2.8rem;
   padding-top: 25px;
+}
+.home .the-blocks .text-content {
+  width: 50%;
 }
 .services .jumbotron {
   position: relative;
@@ -421,7 +439,7 @@ footer .footer-copyright p {
 }
 .services .tabs .topics .tab h3 {
   text-align: center;
-  font-size: 2.8rem;
+  font-size: 2rem;
 }
 .services .tabs .topics .active-tab {
   background-color: #5E9FB9;
